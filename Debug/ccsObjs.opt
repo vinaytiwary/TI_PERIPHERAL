@@ -1,0 +1,1 @@
+"./tm4c1233e6pz_startup_ccs.obj" "./Source/GPIO.obj" "./Source/main.obj" "../tm4c1233e6pz.cmd" -llibc.a 
