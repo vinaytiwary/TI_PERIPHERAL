@@ -1,6 +1,7 @@
 # FIXED
 
 Source/GPIO.obj: ../Source/GPIO.c
+Source/GPIO.obj: ../Source/GPIO.h
 Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdint.h
 Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/_ti_config.h
 Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/linkage.h
@@ -12,10 +13,10 @@ Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/
 Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_stdint.h
 Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_stdint.h
 Source/GPIO.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool.h
-Source/GPIO.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/TM4C1233E6PZ.h
-Source/GPIO.obj: ../Source/GPIO.h
 
 ../Source/GPIO.c:
+
+../Source/GPIO.h:
 
 C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdint.h:
 
@@ -38,8 +39,4 @@ C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_stdint.h
 C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_stdint.h:
 
 C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool.h:
-
-C:/ti/TivaWare_C_Series-2.2.0.295/inc/TM4C1233E6PZ.h:
-
-../Source/GPIO.h:
 

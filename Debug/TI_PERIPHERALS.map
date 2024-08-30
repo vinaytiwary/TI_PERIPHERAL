@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.5                     
 ******************************************************************************
->> Linked Thu Aug 29 17:03:43 2024
+>> Linked Fri Aug 30 11:12:20 2024
 
 OUTPUT FILE NAME:   <TI_PERIPHERALS.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000026d
