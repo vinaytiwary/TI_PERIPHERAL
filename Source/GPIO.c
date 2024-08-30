@@ -30,7 +30,17 @@ bool readGPIO(uint32_t portBase, uint8_t pin)
     volatile uint32_t* dataRegister = (volatile uint32_t*)(portBase + DATA_REGISTER_OFFSET);
     return ((*dataRegister & (1 << pin)) != 0);
 }
+void toggleGPIO(uint32_t portBase, uint8_t pin)
+{
+    if (pin > PIN7 || !enableGPIOClock(portBase))
+    {
+        return;
+    }
 
+    volatile uint32_t* dataRegister = (volatile uint32_t*)(portBase + DATA_REGISTER_OFFSET);
+
+    *dataRegister ^=(1<<pin);
+}
 void setGPIO_Direction(uint32_t portBase, uint8_t pin, bool direction)
 {
     if (pin > PIN7 || !enableGPIOClock(portBase))

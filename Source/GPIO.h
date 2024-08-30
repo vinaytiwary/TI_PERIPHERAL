@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+//#define GPIO_AHB
 #define GPIO_CLK_R       (*((volatile uint32_t *)0x400FE608))
 // Base addresses for GPIO ports as integers
 #ifndef GPIO_AHB
@@ -17,7 +18,7 @@
 #define PORTH  (0x40027000)
 #define PORTJ  (0x4006A000)
 #define PORTK  (0x4006B000)
-#elif
+#else
 #define PORTA  (0x40058000) // AHB Base Address for PORTA
 #define PORTB  (0x40059000) // AHB Base Address for PORTB
 #define PORTC  (0x4005A000) // AHB Base Address for PORTC
@@ -60,6 +61,7 @@
 // Function prototypes
 void writeGPIO(uint32_t portBase, uint8_t pin, bool state);
 bool readGPIO(uint32_t portBase, uint8_t pin);
+void toggleGPIO(uint32_t portBase, uint8_t pin);
 void setGPIO_Direction(uint32_t portBase, uint8_t pin, bool direction);
 bool getGPIO_Direction(uint32_t portBase, uint8_t pin);
 bool enableGPIOClock(uint32_t portBase);
