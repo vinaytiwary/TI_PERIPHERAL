@@ -1,8 +1,6 @@
 #ifndef GPIO_H_
 #define GPIO_H_
 
-#include <stdint.h>
-#include <stdbool.h>
 
 //#define GPIO_AHB
 #define GPIO_CLK_R       (*((volatile uint32_t *)0x400FE608))

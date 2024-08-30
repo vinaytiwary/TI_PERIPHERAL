@@ -1,5 +1,8 @@
 
+#include <stdint.h>
+#include <stdbool.h>
 #include "GPIO.h"
+
 
 void writeGPIO(uint32_t portBase, uint8_t pin, bool state)
 {

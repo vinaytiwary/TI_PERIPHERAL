@@ -12,6 +12,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./tm4c1233e6pz_startup_ccs.obj" \
 "./Source/GPIO.obj" \
+"./Source/TIMER.obj" \
 "./Source/main.obj" \
 "../tm4c1233e6pz.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -158,8 +159,8 @@ TI_PERIPHERALS.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "tm4c1233e6pz_startup_ccs.obj" "Source\GPIO.obj" "Source\main.obj" 
-	-$(RM) "tm4c1233e6pz_startup_ccs.d" "Source\GPIO.d" "Source\main.d" 
+	-$(RM) "tm4c1233e6pz_startup_ccs.obj" "Source\GPIO.obj" "Source\TIMER.obj" "Source\main.obj" 
+	-$(RM) "tm4c1233e6pz_startup_ccs.d" "Source\GPIO.d" "Source\TIMER.d" "Source\main.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
