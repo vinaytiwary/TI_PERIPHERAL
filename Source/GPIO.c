@@ -82,6 +82,9 @@ bool enableGPIOClock(uint32_t portBase)
     uint16_t portNum = getPortNum(portBase);
     if (portNum != PORT_INVALID)
     {
+#ifdef GPIO_AHB
+        GPIO_AHB_ENABLE_R |=portNum;
+#endif
         GPIO_CLK_R |= portNum;
         return true;
     }

@@ -5,8 +5,9 @@
 #include "GPIO.h"
 #include "TIMER.h"
 #include "common.h"
-
+#include "schedular.h"
 void delay_ms(uint32_t delay);
+schedular_flg_t schedular_flg;
 int main(void)
 {
     //Timer0_Init();
@@ -15,8 +16,25 @@ int main(void)
     while(1)
     {
         //toggleGPIO(PORTF,PIN4);
-        writeGPIO(PORTH,PIN1,1);
-       // delay_ms(1000);
+        //writeGPIO(PORTH,PIN1,1);
+        if(schedular_flg.flg_10ms==true)
+        {
+            schedular_flg.flg_10ms=false;
+            toggleGPIO(PORTF,PIN4);
+        }
+        if(schedular_flg.flg_50ms==true)
+        {
+            schedular_flg.flg_50ms=false;
+        }
+        if(schedular_flg.flg_100ms==true)
+        {
+            schedular_flg.flg_100ms=false;
+        }
+        if(schedular_flg.flg_1sec==true)
+        {
+            schedular_flg.flg_1sec=false;
+        }
+
     }
 }
 

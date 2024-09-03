@@ -16,6 +16,7 @@ Source/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/TM4C1233E6PZ.h
 Source/main.obj: ../Source/GPIO.h
 Source/main.obj: ../Source/TIMER.h
 Source/main.obj: ../Source/common.h
+Source/main.obj: ../Source/schedular.h
 
 ../Source/main.c:
 
@@ -48,4 +49,6 @@ C:/ti/TivaWare_C_Series-2.2.0.295/inc/TM4C1233E6PZ.h:
 ../Source/TIMER.h:
 
 ../Source/common.h:
+
+../Source/schedular.h:
 
