@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 # TM4C1233xx_PERIPHERAL
 =======
 # TI_PERIPHERAL
->>>>>>> fd8f9ba814f20aaf0b81e56cc2aae904852d552c
+
+##GPIO
+
