@@ -3,4 +3,5 @@
 # TI_PERIPHERAL
 
 ##GPIO
+##UART
 
